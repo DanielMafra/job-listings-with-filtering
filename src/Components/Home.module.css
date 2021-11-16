@@ -1,0 +1,11 @@
+.header {
+  height: 156px;
+}
+
+.headerMobileBg {
+  background: url("../images/bg-header-mobile.svg") var(--desaturated-dark-cyan);
+}
+
+.headerDesktopBg {
+  background: url("../images/bg-header-desktop.svg") var(--desaturated-dark-cyan);
+}

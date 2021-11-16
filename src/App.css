@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  /*Primary*/
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  /*Neutral*/
+  --light-grayish-cyan-bg: hsl(180, 52%, 96%);
+  --light-grayish-cyan-ft: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
 }
 
 img {
