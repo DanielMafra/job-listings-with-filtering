@@ -2,9 +2,22 @@
   background-color: var(--light-grayish-cyan-ft);
   padding: 4px 8px;
   border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+  color: var(--desaturated-dark-cyan);
+}
+
+.tag:hover{
+  color: #fff !important;
+  background-color: var(--desaturated-dark-cyan);
 }
 
 .tag > strong {
   font-size: 14px;
-  color: var(--desaturated-dark-cyan);
+}
+
+@media (min-width:900px){
+  .tag {
+    padding: 8px;
+  }
 }

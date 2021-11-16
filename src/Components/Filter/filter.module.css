@@ -31,6 +31,12 @@
   background-color: var(--desaturated-dark-cyan);
   padding: 8px;
   margin-left: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.remove:hover{
+  background-color: var(--very-dark-grayish-cyan);
 }
 
 .filter > button {
@@ -38,4 +44,11 @@
   border: none;
   font-weight: 700;
   color: var(--dark-grayish-cyan);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.filter > button:hover{
+  color: var(--desaturated-dark-cyan);
+  text-decoration: underline;
 }

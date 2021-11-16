@@ -17,6 +17,12 @@
   color: var(--very-dark-grayish-cyan);
   margin-top: 8px;
   display: block;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.type:hover{
+  color: var(--desaturated-dark-cyan);
 }
 
 .tags {
