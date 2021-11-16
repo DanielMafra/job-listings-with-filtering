@@ -27,6 +27,12 @@
   padding-left: 8px;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .remove {
   background-color: var(--desaturated-dark-cyan);
   padding: 8px;

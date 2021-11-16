@@ -19,6 +19,7 @@
 
 body {
   background-color: var(--light-grayish-cyan-bg);
+  padding-bottom: 64px;
 }
 
 img {

@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './infos.module.css';
 
-const Infos = () => {
+const Infos = ({ job }) => {
   return (
     <ul className={styles.infos}>
-      <li>1d ago</li>
-      <li>Full Time</li>
-      <li>USA only</li>
+      <li>{job.postedAt}</li>
+      <li>{job.contract}</li>
+      <li>{job.location}</li>
     </ul>
   )
 }
