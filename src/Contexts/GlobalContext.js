@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 export const GlobalContext = React.createContext();
 
 export const GlobalStorage = ({ children }) => {
+  const [data, setData] = useState([]);
   const [jobs, setJobs] = useState([]);
   const [filter, setFilter] = useState([]);
 
@@ -15,7 +16,23 @@ export const GlobalStorage = ({ children }) => {
     const response = await fetch(screen <= 375 ? url[0] : url[1]);
     const json = await response.json();
     setJobs(json);
+    setData(json);
   }, []);
+
+  useEffect(() => {
+    if (filter != '') {
+      setJobs(data);
+      jobs.map(job => {
+        filter.map(f => {
+          setJobs(oldArray => (
+            oldArray.filter(value => value.role === f || value.level === f || value.tools.includes(f) || value.languages.includes(f))
+          ))
+        })
+      })
+    } else {
+      setJobs(data);
+    }
+  }, [filter]);
 
   return (
     <GlobalContext.Provider value={{ jobs, filter, setFilter }}>

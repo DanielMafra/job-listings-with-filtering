@@ -9,6 +9,10 @@ const Filter = () => {
     setFilter(filter.filter(value => value !== item))
   }
 
+  function handleClear() {
+    setFilter([]);
+  }
+
   return (
     <div className={styles.filter}>
       <ul className={styles.tags}>
@@ -16,7 +20,7 @@ const Filter = () => {
           <img src="../../images/icon-remove.svg" alt="" />
         </div></li>)}
       </ul>
-      <button>Clear</button>
+      <button onClick={handleClear}>Clear</button>
     </div>
   )
 }
