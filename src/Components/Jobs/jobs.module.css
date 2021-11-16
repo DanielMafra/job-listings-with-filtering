@@ -4,3 +4,9 @@
   position: relative;
   top: -39px;
 }
+
+@media (min-width: 900px){
+  .container {
+    max-width: 1024px;
+  }
+}

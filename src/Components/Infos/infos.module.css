@@ -14,3 +14,9 @@
 .infos > li:first-of-type {
   list-style: none;
 }
+
+@media (min-width: 900px){
+  .infos {
+    border-bottom: none;
+  }
+}

@@ -16,3 +16,18 @@
   position: absolute;
   top: -50px;
 }
+
+@media (min-width: 900px){
+  .jobInfos {
+    display: flex;
+    align-items: center;
+  }
+
+  .jobInfos > img {
+    width: 86px;
+    height: 86px;
+    position: initial;
+    top: initial;
+    margin-right: 18px;
+  }
+}
