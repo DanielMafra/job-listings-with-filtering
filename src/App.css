@@ -17,6 +17,10 @@
   font-family: 'Spartan', sans-serif;
 }
 
+body {
+  background-color: var(--light-grayish-cyan-bg);
+}
+
 img {
   display: block;
   max-width: 100%;

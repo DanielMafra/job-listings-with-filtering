@@ -4,7 +4,9 @@ import Job from '../Job/index';
 
 const Jobs = () => {
   return (
-    <Job />
+    <div className={styles.container}>
+      <Job />
+    </div>
   )
 }
 
