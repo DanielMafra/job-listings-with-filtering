@@ -1,0 +1,12 @@
+.badge {
+  background-color: var(--desaturated-dark-cyan);
+  padding: 2px 8px;
+  border-radius: 16px;
+}
+
+.badge > strong {
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  top: 1px;
+}

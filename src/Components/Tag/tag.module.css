@@ -1,0 +1,10 @@
+.tag {
+  background-color: var(--light-grayish-cyan-ft);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.tag > strong {
+  font-size: 14px;
+  color: var(--desaturated-dark-cyan);
+}
