@@ -3,12 +3,16 @@ import { GlobalContext } from '../../Contexts/GlobalContext';
 import styles from './filter.module.css';
 
 const Filter = () => {
-  const { filter } = useContext(GlobalContext);
+  const { filter, setFilter } = useContext(GlobalContext);
+
+  function handleRemove(item) {
+    setFilter(filter.filter(value => value !== item))
+  }
 
   return (
     <div className={styles.filter}>
       <ul className={styles.tags}>
-        {filter != '' && filter.map(item => <li>{item}<div className={styles.remove}>
+        {filter != '' && filter.map(item => <li key={item}>{item}<div className={styles.remove} onClick={() => handleRemove(item)}>
           <img src="../../images/icon-remove.svg" alt="" />
         </div></li>)}
       </ul>

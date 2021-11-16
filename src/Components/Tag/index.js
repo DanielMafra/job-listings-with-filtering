@@ -6,8 +6,9 @@ const Tag = ({ title }) => {
   const { filter, setFilter } = useContext(GlobalContext);
 
   function handleClick() {
-    setFilter(oldArray => [...oldArray, title]);
-    console.log(filter)
+    if (!filter.includes(title)) {
+      setFilter(oldArray => [...oldArray, title]);
+    }
   }
 
   return (
