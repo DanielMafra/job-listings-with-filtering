@@ -7,7 +7,7 @@ export const GlobalStorage = ({ children }) => {
   const [jobs, setJobs] = useState([]);
   const [filter, setFilter] = useState([]);
 
-  //this consts is just for alternate URL to fetch in localhost (development mode)
+  //this consts is just for alternate URL to fetch in localhost desktop and smartphone (development mode)
   const url = ["http://192.168.15.120:3000/api/data.json", "http://localhost:3000/api/data.json"];
   const screen = window.innerWidth;
   //---
